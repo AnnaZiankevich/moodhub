@@ -61,3 +61,21 @@ $mid-emotion-color: #0FA862;
 
 //-----------------------------------------------------------------------------------
 
+*,
+::after, 
+::before,
+body {
+    @include main-text();
+    
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: $background-color;
+    color: $text-color;
+}
+
+a {
+    text-decoration: none;
+
+}

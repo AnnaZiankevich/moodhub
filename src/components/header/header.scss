@@ -1,0 +1,42 @@
+@import "/src/styles/main.scss";
+
+.header {
+    width: 100%;
+
+    .header__content {
+        width: 85.20833333333333%;
+        display: flex;
+        flex-direction: row;
+        gap: 123px;
+        margin: 40px 106px 0px 106px;
+        align-items: center;
+
+        .header__identity {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            align-items: center;
+            height: 44px;
+
+            .header__logo {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .header__company-name {
+                @include company-name-text();
+            }
+        }
+
+        .header__nav-bar { 
+            ul {
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                gap: 50px;
+                align-items: center;
+            }
+        }
+    }
+}
