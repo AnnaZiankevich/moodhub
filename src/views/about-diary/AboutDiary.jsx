@@ -5,6 +5,7 @@ function AboutDiary() {
 
   return (
     <div className="about-diary">
+      {console.log('Rendered AboutDiary view')}
         О дневнике
     </div>
   );

@@ -12,6 +12,7 @@ function MainComponent() {
                 <Route exact path="/about-diary" element={<AboutDiary />}/>
                 <Route exact path="/for-alexithymitists" element={<ForAlexithymitists />}/>
             </Routes>
+            {console.log('Created routes')}
         </div>
      );
 }

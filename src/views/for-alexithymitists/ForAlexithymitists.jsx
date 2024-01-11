@@ -5,6 +5,7 @@ function ForAlexithymitists() {
 
   return (
     <div className="alexithym">
+      {console.log('Rendered ForAlexithymitists view')}
         Для алекситимистов
     </div>
   );
