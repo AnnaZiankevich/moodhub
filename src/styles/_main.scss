@@ -1,0 +1,53 @@
+//-----------------------------------Fonts-------------------------------------------
+
+@import "fonts";
+
+$ptsans-bold: "PTSans-Bold";
+$ptsans-regular: "PTSans-Regular";
+
+$ttcommons-bold: "TTCommons-Bold";
+$ttcommons-regular: "TTCommons-Regular";
+
+//-----------------------------------------------------------------------------------
+
+
+//-----------------------------------Colors-------------------------------------------
+
+
+
+//-----------------------------------------------------------------------------------
+
+//-----------------------------------Texts-------------------------------------------
+
+@mixin accent-text() {
+    font-family: $ptsans-bold;
+    font-size: 44px;
+    line-height: 110%;
+}
+
+@mixin company-name-text() {
+    font-family: $ptsans-regular;
+    font-size: 24px;
+    line-height: 140%;
+}
+
+@mixin main-text() {
+    font-family: $ttcommons-regular;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+@mixin second-text() {
+    font-family: $ttcommons-regular;
+    font-size: 12px;
+    line-height: 130%;
+}
+
+@mixin inputs-text() {
+    font-family: $ttcommons-regular;
+    font-size: 14px;
+    line-height: 120%;
+}
+
+//-----------------------------------------------------------------------------------
+
