@@ -18,9 +18,9 @@ function Header() {
         </div>
         <div className="header__nav-bar">
             <ul className="header__nav-list">
-                <li className="header__nav-item">Мой дневник</li>
-                <li className="header__nav-item">О дневнике</li>
-                <li className="header__nav-item">Для алекситимистов</li>
+                <Link to="/"><li className="header__nav-item">Мой дневник</li></Link>
+                <Link to="/about-diary"><li className="header__nav-item">О дневнике</li></Link>
+                <Link to="/for-alexithymitists"><li className="header__nav-item">Для алекситимистов</li></Link>
             </ul>
         </div>
       </div>
