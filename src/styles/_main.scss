@@ -84,3 +84,11 @@ a {
     width: 85.20833333333333%;
     margin: 65px 106px 0px 106px;
 }
+
+@mixin content-layout() {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+$main-border-radius: 10px;

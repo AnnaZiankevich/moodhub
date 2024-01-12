@@ -10,7 +10,7 @@ function MyDiary() {
       {console.log('Rendered MyDiary view')}
         <div className="my-diary__content">
           <div className="my-diary__header">
-            Мой дневник
+            Мой дневник эмоций
           </div>
           <div className="my-diary__emotions-table">
             <div className="my-diary__table-header">
