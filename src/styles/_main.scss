@@ -91,4 +91,40 @@ a {
     gap: 20px;
 }
 
+@mixin table-row($background-color, $border-color) {
+    width: 91.44254278728606%;
+
+    & table 
+    {
+        width: 100%;
+        border-spacing: 0px; 
+
+        tbody tr 
+        {
+            & > :nth-child(1) {
+                width: 9.090909090909091%;
+                border-radius: 10px 0px 0px 10px;
+            }
+
+            & > :nth-child(6) {
+                border-radius: 0px 10px 10px 0px;
+            }
+
+            td {
+                width: 18.18181818181818%;
+                padding: 16px 14px;
+
+                background-color: $background-color;
+
+                border-top: 1px solid $border-color;
+                border-bottom: 1px solid $border-color;
+                border-left: 1px solid $border-color;
+
+                vertical-align: top;
+                text-align: left;
+            }
+        }
+    }
+}
+
 $main-border-radius: 10px;

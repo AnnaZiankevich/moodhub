@@ -1,1 +1,24 @@
 @import "/src/styles/main.scss";
+
+.table-record {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 15px;
+
+    .table-record__record-info {
+        @include table-row($table-background-color, $table-border-color);
+    }
+
+    .table-record__actions {
+        margin-top: 14px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+        & > div {
+            cursor: pointer;
+        }
+    }
+
+}

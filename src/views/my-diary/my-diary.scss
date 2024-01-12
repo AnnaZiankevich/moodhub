@@ -15,34 +15,7 @@
             @include content-layout();
 
             .my-diary__table-header {
-                width: 91.44254278728606%;
-
-                & table 
-                {
-                    width: 100%;
-                    border-spacing: 0px; 
-
-                    tbody tr 
-                    {
-                        & > :nth-child(1) {
-                            width: 9.090909090909091%;
-                            border-radius: 10px 0px 0px 10px;
-                        }
-
-                        & > :nth-child(6) {
-                            border-radius: 0px 10px 10px 0px;
-                        }
-
-                        td {
-                            width: 18.18181818181818%;
-                            padding: 16px 14px;
-                            background-color: #FEFEFE33;
-                            border-top: 1px solid #7B7B7B;
-                            border-bottom: 1px solid #7B7B7B;
-                            border-left: 1px solid #7B7B7B;
-                        }
-                    }
-                }
+                @include table-row(#FEFEFE33, #7B7B7B);
             }
     
             .my-diary__add-record {
@@ -52,6 +25,8 @@
                 align-items: center;
     
                 width: 170px;
+
+                cursor: pointer;
     
                 .my-diary__add-record-btn {
                     display: flex;
