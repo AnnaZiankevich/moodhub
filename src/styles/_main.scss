@@ -127,4 +127,23 @@ a {
     }
 }
 
+@mixin emotion-style($color) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8.912655971479501%;
+    height: 30px;
+
+    border-radius: $second-border-radius;
+    border: 1px solid $color;
+
+    cursor: pointer;
+
+    &.choosed {
+        border: none;
+        background-color: $color;
+    }
+}
+
 $main-border-radius: 10px;
+$second-border-radius: 5px;

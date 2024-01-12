@@ -1,1 +1,5 @@
 @import "/src/styles/main.scss";
+
+.good-emotion {
+    @include emotion-style($accent-color);
+}
