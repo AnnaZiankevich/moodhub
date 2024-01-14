@@ -1,0 +1,19 @@
+@import "/src/styles/main.scss";
+
+.text-area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 9px;
+    width: 100%;
+
+    textarea {
+        background-color: $text-color;
+        color: $background-color;
+        resize: none;
+        height: 85px;
+        width: 100%;
+        border-radius: $second-border-radius;
+        padding: 5px 10px;
+    }
+}

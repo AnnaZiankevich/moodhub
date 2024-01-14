@@ -1,13 +1,23 @@
-import React from "react"
+import React, { useState } from "react"
 import TableRecord from "../../components/table-record/TableRecord.jsx";
 import GoodEmotion from "../../components/emotions/good/GoodEmotion.jsx";
 import MidEmotion from '../../components/emotions/mid/MidEmotion.jsx'
 import BadEmotion from '../../components/emotions/bad/BadEmotion.jsx'
 import SuperBadEmotion from '../../components/emotions/super-bad/SuperBadEmotion.jsx'
+import Form from "../../components/form/Form.jsx";
 import './my-diary.scss'
 import add from '../../assets/img/add-button.svg'
 
 function MyDiary() {
+
+  const [isPopupVisible, setIsPopupVisible] = useState(false) 
+
+	const openPopup = () => {
+		setIsPopupVisible(true) 
+	}
+	const closePopup = () => {
+		setIsPopupVisible(false) 
+	}
 
   const data = [
     {
@@ -70,7 +80,7 @@ function MyDiary() {
                 </tbody>
               </table>
             </div>
-            <div className="my-diary__add-record">
+            <div className="my-diary__add-record" onClick={openPopup}>
                 <div className="my-diary__add-record-btn">
                   <img src={add} alt="add-icon" />
                 </div>
@@ -78,6 +88,7 @@ function MyDiary() {
                   Добавить запись
                 </div>
             </div>
+            {isPopupVisible && <Form onClose={closePopup} />}
             <div className="my-diary__table-content">
               {
                 data.toReversed().map((dataItem) => (

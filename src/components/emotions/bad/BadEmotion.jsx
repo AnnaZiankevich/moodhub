@@ -11,7 +11,8 @@ function BadEmotion( {label, isChoosed, isDisabled} ) {
         {console.log('Rendered BadEmotion')}
         <button className={`bad-emotion ${choosed ? 'choosed' : ''}`}
            disabled={isDisabled}
-           onClick={() => setChoosed((prev) => !prev)}>
+           onClick={() => setChoosed((prev) => !prev)}
+           type="button">
             {label}
         </button>
     </>
