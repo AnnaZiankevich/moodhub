@@ -1,1 +1,5 @@
 @import "/src/styles/main.scss";
+
+.bad-emotion {
+    @include emotion-style($bad-emotion-color);
+}

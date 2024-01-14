@@ -1,5 +1,9 @@
 import React from "react"
 import TableRecord from "../../components/table-record/TableRecord.jsx";
+import GoodEmotion from "../../components/emotions/good/GoodEmotion.jsx";
+import MidEmotion from '../../components/emotions/mid/MidEmotion.jsx'
+import BadEmotion from '../../components/emotions/bad/BadEmotion.jsx'
+import SuperBadEmotion from '../../components/emotions/super-bad/SuperBadEmotion.jsx'
 import './my-diary.scss'
 import add from '../../assets/img/add-button.svg'
 
@@ -11,7 +15,11 @@ function MyDiary() {
       date: '08.10.2023',
       situation: 'Сижу в школе, много мыслей в голове',
       thoughts: 'Я никому не нужна, никто меня не любит и не ценит. Почему так????? Чем я это заслужила',
-      emotions: '%emotion%',
+      emotionsList: [
+        <BadEmotion label='Печаль' isChoosed={true} isDisabled={true} />,
+        <MidEmotion label='Отвращение' isChoosed={true} isDisabled={true} />,
+        <SuperBadEmotion label='Гнев' isChoosed={true} isDisabled={true} />,
+      ],
       bodyReaction: 'Грызу губы',
       behavior: 'Стучу ручкой по столу',
     },
@@ -20,7 +28,10 @@ function MyDiary() {
       date: '09.10.2023',
       situation: 'Гуляли с подругой',
       thoughts: 'Как хорошо быть рядом с человеком, который тебя понимает',
-      emotions: '%emotion%',
+      emotionsList: [
+        <GoodEmotion label='Радость' isChoosed={true} isDisabled={true} />,
+        <GoodEmotion label='Облегчение' isChoosed={true} isDisabled={true} />,
+      ],
       bodyReaction: 'Учащенное сердцебиение',
       behavior: 'Много улыбалась',
     },
@@ -29,7 +40,9 @@ function MyDiary() {
       date: '11.10.2023',
       situation: 'Поссорились с мамой из-за выгула собаки',
       thoughts: 'Можно не трогать меня хотя бы пять минут',
-      emotions: '%emotion%',
+      emotionsList: [
+        <SuperBadEmotion label='Обида' isChoosed={true} isDisabled={true} />,
+      ],
       bodyReaction: 'Сокращение мышц рук и ног',
       behavior: 'Закрылась в комнате и плакала',
     },

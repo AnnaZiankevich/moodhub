@@ -1,1 +1,5 @@
 @import "/src/styles/main.scss";
+
+.mid-emotion {
+    @include emotion-style($mid-emotion-color);
+}

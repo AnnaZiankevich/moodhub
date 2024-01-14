@@ -131,7 +131,9 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 8.912655971479501%;
+    // width: 8.912655971479501%;
+    margin-bottom: 6px;
+    width: 140px;
     height: 30px;
 
     border-radius: $second-border-radius;
@@ -142,6 +144,7 @@ a {
     &.choosed {
         border: none;
         background-color: $color;
+        cursor: default;
     }
 }
 
