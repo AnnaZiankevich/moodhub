@@ -71,8 +71,11 @@ body {
     -webkit-box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: $background-color;
     color: $text-color;
+}
+
+body {
+    background-color: $background-color;
 }
 
 a {
@@ -139,6 +142,7 @@ a {
 
     border-radius: $second-border-radius;
     border: 1px solid $color;
+    background-color: $background-color;
 
     cursor: pointer;
 

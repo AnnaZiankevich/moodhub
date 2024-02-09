@@ -99,21 +99,17 @@ function Emotion( { title, choosed, disabled } ) {
   function renderSwitch(param, title) {
     switch(param){
         case 'good': 
-            <GoodEmotion label={title} isChoosed={choosed} isDisabled={disabled} />
             console.log('renderSwitch function rendered GoodEmotion')
-            break;
+            return <GoodEmotion label={title} isChoosed={choosed} isDisabled={disabled} />
         case 'middle': 
-            <MidEmotion label={title} isChoosed={choosed} isDisabled={disabled} />
             console.log('renderSwitch function rendered MidEmotion')
-            break;
+            return <MidEmotion label={title} isChoosed={choosed} isDisabled={disabled} />
         case 'bad': 
-            <BadEmotion label={title} isChoosed={choosed} isDisabled={disabled} />
             console.log('renderSwitch function rendered BadEmotion')
-            break;
+            return <BadEmotion label={title} isChoosed={choosed} isDisabled={disabled} />
         case 'superbad': 
-            <SuperBadEmotion label={title} isChoosed={choosed} isDisabled={disabled} />
             console.log('renderSwitch function rendered SuperBadEmotion')
-            break;
+            return <SuperBadEmotion label={title} isChoosed={choosed} isDisabled={disabled} />
         default:
             console.log(`Not found category '${param}'.`);
     } 
@@ -122,7 +118,7 @@ function Emotion( { title, choosed, disabled } ) {
   return (
     <div className="emotion">
         {console.log('Rendered Emotion')}
-        <div className="">
+        <div className="emotion__body">
             {searchResults.map((emotion) => (
                 <div key={emotion.value}>
                     {renderSwitch(emotionCategory, emotion.title)}
