@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import TableRecord from "../../components/table-record/TableRecord.jsx";
-import Emotion from "../../components/emotions/Emotion.jsx";
 import Form from "../../components/form/Form.jsx";
 import './my-diary.scss'
 import add from '../../assets/img/add-button.svg'
