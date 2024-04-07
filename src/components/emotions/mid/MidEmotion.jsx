@@ -8,7 +8,6 @@ function MidEmotion( {label, isChoosed, isDisabled} ) {
 
   return (
     <>
-        {console.log('Rendered MidEmotion')}
         <button className={`mid-emotion ${choosed ? 'choosed' : ''}`}
            disabled={isDisabled}
            onClick={() => setChoosed((prev) => !prev)}

@@ -8,7 +8,7 @@ function TableRecord( {recordData, onDelete, onEdit} ) {
 
   return (
     <div className="table-record" key={recordData.id}>
-        {console.log('Rendered TableRecord')}
+        {/* {console.log('Rendered TableRecord')} */}
         <div className="table-record__record-info">
             <table>
                 <tbody>
@@ -17,8 +17,8 @@ function TableRecord( {recordData, onDelete, onEdit} ) {
                         <td>{recordData.situation}</td>
                         <td>{recordData.thoughts}</td>
                         <td>
-                            {recordData.emotionsList.map((item) => 
-                                <Emotion title={item.title} choosed={true} disabled={true} />,
+                            {recordData.emotions.map((item) => 
+                                <Emotion title={item} choosed={true} disabled={true} />,
                             )}
                         </td>
                         <td>{recordData.bodyReaction}</td>
@@ -28,7 +28,7 @@ function TableRecord( {recordData, onDelete, onEdit} ) {
             </table>
         </div>
         <div className="table-record__actions">
-            {console.log('Record id ' + recordData.id)}
+            {/* {console.log('Record id ' + recordData.id)} */}
             <div className="table-record__edit-btn" onClick={() => onEdit(recordData.id)}>
                 <img src={edit} alt="edit-icon" />
             </div>

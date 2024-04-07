@@ -7,7 +7,7 @@ function Header() {
 
   return (
     <div className="header">
-      {console.log('Rendered Header component')}
+      {/* {console.log('Rendered Header component')} */}
       <div className="header__content">
         <div className="header__identity">
           <div className="header__logo">

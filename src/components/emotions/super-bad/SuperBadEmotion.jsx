@@ -8,7 +8,6 @@ function SuperBadEmotion( {label, isChoosed, isDisabled} ) {
 
   return (
     <>
-        {console.log('Rendered SuperBadEmotion')}
         <button className={`super-bad-emotion ${choosed ? 'choosed' : ''}`}
            disabled={isDisabled}
            onClick={() => setChoosed((prev) => !prev)}

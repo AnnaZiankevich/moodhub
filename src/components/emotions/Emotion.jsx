@@ -4,7 +4,7 @@ import MidEmotion from "./mid/MidEmotion";
 import BadEmotion from "./bad/BadEmotion";
 import SuperBadEmotion from "./super-bad/SuperBadEmotion";
 
-function Emotion( { title, choosed, disabled } ) {
+function Emotion( { title, choosed, disabled, onClick } ) {
 
   let searchResults = [];
   let emotionCategory = '';
@@ -92,23 +92,21 @@ function Emotion( { title, choosed, disabled } ) {
         emotionCategory = category;
       }
     });
-
-    console.log(searchResults);
   }
   
   function renderSwitch(param, title) {
     switch(param){
         case 'good': 
-            console.log('renderSwitch function rendered GoodEmotion')
+            // console.log('renderSwitch function rendered GoodEmotion')
             return <GoodEmotion label={title} isChoosed={choosed} isDisabled={disabled} />
         case 'middle': 
-            console.log('renderSwitch function rendered MidEmotion')
+            // console.log('renderSwitch function rendered MidEmotion')
             return <MidEmotion label={title} isChoosed={choosed} isDisabled={disabled} />
         case 'bad': 
-            console.log('renderSwitch function rendered BadEmotion')
+            // console.log('renderSwitch function rendered BadEmotion')
             return <BadEmotion label={title} isChoosed={choosed} isDisabled={disabled} />
         case 'superbad': 
-            console.log('renderSwitch function rendered SuperBadEmotion')
+            // console.log('renderSwitch function rendered SuperBadEmotion')
             return <SuperBadEmotion label={title} isChoosed={choosed} isDisabled={disabled} />
         default:
             console.log(`Not found category '${param}'.`);
@@ -116,8 +114,7 @@ function Emotion( { title, choosed, disabled } ) {
   }
 
   return (
-    <div className="emotion">
-        {console.log('Rendered Emotion')}
+    <div className="emotion" onClick={() => onClick()}>
         <div className="emotion__body">
             {searchResults.map((emotion) => (
                 <div key={emotion.value}>
