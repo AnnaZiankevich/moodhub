@@ -37,6 +37,15 @@
 
             .my-diary__table-content {
                 @include content-layout();
+
+                h1 {
+                    @include main-text();
+                    width: 91.4425427873%;;
+                    font-size: 54px;
+                    text-align: center;
+                    opacity: 0.1;
+                    font-weight: 700;
+                }
             }
         }
     }

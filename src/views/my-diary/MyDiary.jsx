@@ -83,7 +83,7 @@ function MyDiary() {
             <div className="my-diary__table-content">
               {
                 !emotions ?
-                <h1>Пока что Вы не сделали не одной записи в свой дневник</h1> :
+                <h1>Пока что Вы не сделали ни одной записи <br/> в свой дневник</h1> :
                 emotions.toReversed().map((dataItem) => (
                   <div key={dataItem.id}>
                     <TableRecord recordData={dataItem} 
