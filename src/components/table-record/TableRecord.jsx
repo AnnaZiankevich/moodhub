@@ -1,5 +1,6 @@
 import React from "react"
 import './table-record.scss'
+import Emotion from "../emotions/Emotion"
 import edit from '../../assets/img/edit-icon.svg'
 import del from '../../assets/img/delete-icon.svg'
 
@@ -16,7 +17,9 @@ function TableRecord( {recordData, onDelete, onEdit} ) {
                         <td>{recordData.situation}</td>
                         <td>{recordData.thoughts}</td>
                         <td>
-                            {recordData.emotionsList}
+                            {recordData.emotionsList.map((item) => 
+                                <Emotion title={item.title} choosed={true} disabled={true} />,
+                            )}
                         </td>
                         <td>{recordData.bodyReaction}</td>
                         <td>{recordData.behavior}</td>
