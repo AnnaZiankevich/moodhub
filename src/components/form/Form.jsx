@@ -14,6 +14,7 @@ function Form( {onClose} ) {
 
   return (
     <div className="form">
+        {console.log('Rendered Form')}
         <div className="form__container">
             <form className='form__form'>
                 <div className="form__data">

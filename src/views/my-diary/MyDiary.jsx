@@ -7,6 +7,7 @@ import SuperBadEmotion from '../../components/emotions/super-bad/SuperBadEmotion
 import Form from "../../components/form/Form.jsx";
 import './my-diary.scss'
 import add from '../../assets/img/add-button.svg'
+import { v4 as uuidv4 } from 'uuid';
 
 function MyDiary() {
 
@@ -21,7 +22,7 @@ function MyDiary() {
 
   const data = [
     {
-      id: 1, 
+      id: uuidv4(), 
       date: '08.10.2023',
       situation: 'Сижу в школе, много мыслей в голове',
       thoughts: 'Я никому не нужна, никто меня не любит и не ценит. Почему так????? Чем я это заслужила',
@@ -34,7 +35,7 @@ function MyDiary() {
       behavior: 'Стучу ручкой по столу',
     },
     {
-      id: 2, 
+      id: uuidv4(), 
       date: '09.10.2023',
       situation: 'Гуляли с подругой',
       thoughts: 'Как хорошо быть рядом с человеком, который тебя понимает',
@@ -46,7 +47,7 @@ function MyDiary() {
       behavior: 'Много улыбалась',
     },
     {
-      id: 3, 
+      id: uuidv4(), 
       date: '11.10.2023',
       situation: 'Поссорились с мамой из-за выгула собаки',
       thoughts: 'Можно не трогать меня хотя бы пять минут',
