@@ -10,16 +10,18 @@ function Header() {
       {/* {console.log('Rendered Header component')} */}
       <div className="header__content">
         <div className="header__identity">
-          <div className="header__logo">
-            <img src={logo} alt="logo" />
-          </div>
-          <div className="header__company-name">
-            MoodHub
-          </div>
+          <Link to="/home">
+            <div className="header__logo">
+              <img src={logo} alt="logo" />
+            </div>
+            <div className="header__company-name">
+              MoodHub
+            </div>
+          </Link>
         </div>
         <div className="header__nav-bar">
             <ul className="header__nav-list">
-                <Link to="/"><li className="header__nav-item">Мой дневник</li></Link>
+                <Link to="/home"><li className="header__nav-item">Мой дневник</li></Link>
                 <Link to="/about-diary"><li className="header__nav-item">О дневнике</li></Link>
                 <Link to="/for-alexithymitists"><li className="header__nav-item">Для алекситимистов</li></Link>
             </ul>
