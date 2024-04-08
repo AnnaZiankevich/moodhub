@@ -6,8 +6,8 @@ import App from './App';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <HashRouter basename="/moodhub">
+    <BrowserRouter>
 			<App />
-		</HashRouter>
+		</BrowserRouter>
   </React.StrictMode>
 );
