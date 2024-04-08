@@ -13,6 +13,7 @@
 
         .my-diary__emotions-table {
             @include content-layout();
+            padding-bottom: 40px;
 
             .my-diary__table-header {
                 @include table-row(#FEFEFE33, #7B7B7B);

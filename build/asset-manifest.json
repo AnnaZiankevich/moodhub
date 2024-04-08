@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/moodhub/static/css/main.3826420f.css",
-    "main.js": "/moodhub/static/js/main.0b2ea490.js",
+    "main.js": "/moodhub/static/js/main.2c76587c.js",
     "static/media/PTSans-Bold.ttf": "/moodhub/static/media/PTSans-Bold.610bc32a7e32c292ce59.ttf",
     "static/media/PTSans-Regular.ttf": "/moodhub/static/media/PTSans-Regular.77e92507394e2309d837.ttf",
     "static/media/TTCommons-Regular.ttf": "/moodhub/static/media/TTCommons-Regular.7d4f044123cf9b20c11b.ttf",
@@ -11,10 +11,10 @@
     "index.html": "/moodhub/index.html",
     "static/media/add-button.svg": "/moodhub/static/media/add-button.e62a3cb12d785129371acf366beb66ec.svg",
     "main.3826420f.css.map": "/moodhub/static/css/main.3826420f.css.map",
-    "main.0b2ea490.js.map": "/moodhub/static/js/main.0b2ea490.js.map"
+    "main.2c76587c.js.map": "/moodhub/static/js/main.2c76587c.js.map"
   },
   "entrypoints": [
     "static/css/main.3826420f.css",
-    "static/js/main.0b2ea490.js"
+    "static/js/main.2c76587c.js"
   ]
 }

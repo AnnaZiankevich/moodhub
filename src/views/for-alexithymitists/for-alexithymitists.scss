@@ -1,1 +1,19 @@
 @import "/src/styles/main.scss";
+
+.alexithym {
+    width: 100%;
+    @include page-content();
+    @include content-layout();
+
+    .alexithym_header {
+        @include accent-text();
+        padding-bottom: 20px;
+    }
+    
+    .alexithym_content p{
+        @include content-layout();
+        @include main-text();
+        font-size: 24px!important;
+        padding-bottom: 20px;
+    }
+}
