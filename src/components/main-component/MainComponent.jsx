@@ -8,7 +8,7 @@ function MainComponent() {
     return ( 
         <div className="page-content">
             <Routes>
-                <Route path="/moodhub" element={<MyDiary />} /> 
+                <Route path="/" element={<MyDiary />} /> 
                 <Route path="/about-diary" element={<AboutDiary />}/>
                 <Route path="/for-alexithymitists" element={<ForAlexithymitists />}/>
             </Routes>
